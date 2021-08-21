@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberProtec Settings</title>
+    <style>
+        @import url(toggle.css);
+
+        @font-face {
+            font-family: "JetBrains Mono";
+            src: url("fonts/JetBrains-Mono.ttf");
+        }
+
+        body {
+            background: #e3f2fd;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: initial;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        main > div {
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 30px 0;
+            min-height: 60vh;
+            width: 80vw;
+        }
+
+        h1 {
+            color: #5e35b1;
+            margin: 0;
+            text-align: center;
+        }
+
+        h2 {
+            font: 28px Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .break-timer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .label-text {
+            font-size: 24px;
+        }
+
+        .dropdown {
+            border: 2px solid rgb(26, 115, 232);
+            border-radius: 5px;
+            margin-left: 20px;
+            width: 200px;
+            height: 25px;
+            vertical-align: bottom;
+        }
+
+        option:disabled {
+            background: #F2F2F2;
+        }
+
+        .logo {
+            margin-top: 10px;
+            width: 400px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+
+        textarea {
+            margin: 20px;
+            resize: none;
+            height: 50vh;
+            width: 60vw;
+        }
+
+        .save {
+            background: #00bcd4;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px 25px;
+        }
+
+        .instruction {
+            background: #fff3e0;
+            border-radius: 10px;
+            font-family: "JetBrains Mono", sans-serif;
+            padding: 20px;
+        }
+
+        .syntax {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <img src="images/logo-text.svg" alt="CyberProtec logo" class="logo">
+</header>
+<main>
+    <div>
+        <h1>Settings</h1>
+        <div class="container">
+            <h2>Break Timer</h2>
+            <label class="switch">
+                <input type="checkbox" id="toggle-break">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="break-timer">
+            <label>
+                <span class="label-text">Hours</span>
+                <select id="hours" class="dropdown">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </label>
+            <label>
+                <span class="label-text">Minutes</span>
+                <select id="minutes" class="dropdown">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                    <option>36</option>
+                    <option>37</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                    <option>46</option>
+                    <option>47</option>
+                    <option>48</option>
+                    <option>49</option>
+                    <option>50</option>
+                    <option>51</option>
+                    <option>52</option>
+                    <option>53</option>
+                    <option>54</option>
+                    <option>55</option>
+                    <option>56</option>
+                    <option>57</option>
+                    <option>58</option>
+                    <option>59</option>
+                    <option>60</option>
+                </select>
+            </label>
+        </div>
+        <div class="container">
+            <h2>Social Media Etiquette Reminder</h2>
+            <label class="switch">
+                <input type="checkbox" id="toggle-social">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <h2>Block websites and webpages</h2>
+        <div class="instruction">
+            <h3>Instruction to edit filter list:</h3>
+            <ul>
+                <li>Use only one line per website</li>
+                <li>To block a full website with all it's sub-domain and protocol like abc.com, en.abc.com,
+                    https://abc.com
+                    type <b>*://*.abc.com/*</b></li>
+                <li>To block a specific sub-domain like en.abc.com, type <b>*://en.abc.com/*</b></li>
+                <li>To block a specific webpage, like abc.com/attacker, type <b>*://abc.com/attacker</b></li>
+                <li>To block a website/webpage with specific protocol, like <b>https</b> in abc.com, type <b>https://abc.com/*</b>
+                </li>
+                <li>To block all protocol like <b>http</b> and <b>https</b> in abc.com, type <b>*://abc.com/*</b></li>
+                <li>To block a specific file extension on all websites like .exe file, type <b>*://*/*.exe</b></li>
+                <li>To block access of internet from this browser, type <b>*://*/*</b><br></li>
+            </ul>
+            <p class="syntax">Basic syntax: [protocol]://[domain]/[path]<span>[protocol] can be http, https</span><span>[domain] can be any valid domain name like abc.com, www.abc.com, en.abc.com, blog.abc.com, abc.co.uk</span><span>[path] can be any specific URL path like https://abc.com/about-abc, https://abc.com/scam/best-scam.png</span>
+            </p>
+            <p><b>*</b> can be used to define any protocol, domain, path like in <b>*://*/*</b> , first * means any
+                protocol, second * means any domain, and third * means any path.</p>
+            <p>To unblock a website, remove its url from the filter list.</p>
+        </div>
+        <textarea id="filters" placeholder="http://*.abc.com/*&#10;*://*.attacker.com/*&#10;*://www.spy.com/spy.exe"></textarea>
+        <button class="save" id="save">Save</button>
+    </div>
+</main>
+<script src="options.js"></script>
+</body>
+</html>

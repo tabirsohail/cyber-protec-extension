@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "CyberProtec",
+  "version": "0.0.1",
+  "description": "Paving the way to a better internet for everyone by making people aware about cybersecurity.",
+  "permissions": ["notifications", "storage", "tabs", "webNavigation", "webRequest", "webRequestBlocking", "<all_urls>"],
+  "icons": {
+    "128": "/images/logo.png"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["common.js", "background.js"]
+  },
+  "browser_action": {
+    "default_title": "CyberProtec",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

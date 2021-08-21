@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberProtec</title>
+    <style>
+        @import "toggle.css";
+
+        body {
+            background: #e3f2fd;
+            font-size: initial;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            width: 400px;
+        }
+
+        main {
+            background: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 15px;
+        }
+
+        .tips-heading {
+            color: grey;
+            margin: 5px 0 20px;
+        }
+
+        .tips {
+            font-size: 20px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .header {
+            background: #e3f2fd;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 15px;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .settings {
+            background: url("/images/settings.svg") no-repeat 50%;
+            border: none;
+            cursor: pointer;
+            width: 30px;
+        }
+
+        .learn-more {
+            background: #42a5f5;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <img src="images/logo-text.svg" alt="CyberProtec logo" class="logo">
+    <button class="settings" id="settings"></button>
+</header>
+<main>
+    <h1 class="tips-heading">Cybersecurity Tips</h1>
+    <p id="tips" class="tips"></p>
+    <a href="https://cyberprotec.tk" target="_blank" class="learn-more">Know More About Cybersecurity</a>
+    <div class="block">
+        <h2>Block This Website</h2>
+        <label class="switch">
+            <input type="checkbox" id="toggle-block">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</main>
+<script src="common.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
