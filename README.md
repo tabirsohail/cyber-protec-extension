@@ -1,6 +1,6 @@
 # A Project By Tabir Sohail and Zabir Sohail
 
-![CyberProtec Logo](https://github.com/zabirsohail/h/blob/main/logo-texts.png)
+![CyberProtec Logo](https://github.com/tabirsohail/cyber-protec-extension/blob/main/images/logo-texts.png)
 
 **Browser Extension / Web Application**
 
