@@ -4,11 +4,18 @@
 
 **Browser Extension / Web Application**
 
-### This extension work as to promote
+## This extension promotes
 * DIGITAL LITERACY
 * DIGITAL ETIQUETTE
 * DIGITAL SECURITY
 * DIGITAL HEALTH AND WELLNESS
+
+## Features
+* Break Timer
+* Social Media Etiquette Reminder
+* Notification on unsecure website
+* Block websites and webpages
+* Random cybersecurity tips
 
 ## How to install this extension?
 1. Download [zip file](https://github.com/tabirsohail/cyber-protec-extension/releases/download/v0.0.1/CyberProtec-0.0.1.zip) of Extension
@@ -19,5 +26,5 @@
 
 
 ## Credit
-Tabir Sohail
+Tabir Sohail  
 Zabir Sohail
